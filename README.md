@@ -1,5 +1,5 @@
 
-<p align="center", color="red"><strong>```- diff FolweShop```<strong></p>
+<p style="color: red" align="center", color="red"><strong>FolweShop<strong></p>
   
 <p align="center">Project will be migrated to ejs</p>
 
