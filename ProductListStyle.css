@@ -1,5 +1,6 @@
 body {
     background-color: #2c2f33;
+    opacity: 1;
 }
 
 .product-containers {
@@ -38,5 +39,71 @@ body {
     font-size: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.product-details {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 500px;
+    height: 500px;
+    background-color: #36393e;
+    display: none;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+}
+
+.product-details button:not(#buy) {
+    width: 50px;
+    height: 45px;
+    background: inherit;
+    position: absolute;
+    border-top-right-radius: 25px;
+    border: none;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-details button:not(#buy):hover {
+    transition: 0.3s;
+    background: red;
+}
+
+.product-details h2 {
+    border-bottom: 1px solid white;
+}
+
+.product-details p {
+    font-size: 25px;
+    align-items: center;
+    position: absolute;
+    left: 3px;
+    bottom: 4rem;
+    width: 98%;
+    height: 70%;
+    overflow: auto;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.product-details button[id="buy"] {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    color: black;
+    background:	#00e339;
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+    font-size: 25px;
+    border-radius: 25px;
+    border: none;
     cursor: pointer;
 }
